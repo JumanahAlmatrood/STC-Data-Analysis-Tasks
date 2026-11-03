@@ -2,8 +2,6 @@
 
 Analysis of viewing data from STC TV (Jawwy), completed as a Misk virtual experience. The work covers viewing behavior, a watch-time forecast, and a recommendation system.
 
-The datasets are not included in this repository, so the notebooks show saved results but will not run as they are.
-
 ## Tasks
 
 | Notebook | Question | Method |
@@ -29,6 +27,19 @@ Task 2 fits a SARIMA(0,1,1)(1,1,1,12) model to daily watch hours and forecasts 6
 ### Recommendations
 
 Task 3 trains an SVD model on user ratings. For people who watched *Moana*, the top five results are *Borj Al Oloum*, *Wolverine and the X-Men*, *Slugterra*, *House Alone*, and *Pingu*. Four of the five are animation.
+
+## How to run
+
+The datasets are not included in this repository, so the notebooks show saved results. To run them again, you need the STC TV dataset files from the Misk virtual experience.
+
+```bash
+git clone https://github.com/JumanahAlmatrood/STC-Data-Analysis-Tasks.git
+cd STC-Data-Analysis-Tasks
+pip install jupyter pandas numpy matplotlib plotly statsmodels scikit-surprise openpyxl pyxlsb
+jupyter notebook
+```
+
+Put the dataset files next to the notebooks and update the file paths in the `read_excel` cells.
 
 ## Tools
 
